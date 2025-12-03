@@ -149,7 +149,6 @@ function selectAttentionWord(word) {
 }
 
 function setScenario(scenario) {
-  // Optional hook for future: could show different text per question type
   const scenarioBox = document.getElementById("attentionScenario");
   if (!scenarioBox) return;
   if (scenario === "who") {
