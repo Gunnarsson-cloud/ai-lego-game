@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 3 – Attention | LEGO Transformer Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div>
+        <div class="brand-title">LEGO Transformer Lab</div>
+        <div class="brand-subtitle">Level 3 – Attention</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><span>🏠</span>Home</a>
+      <a href="01-prompts.html"><span>💬</span>Prompts</a>
+      <a href="02-tokens.html"><span>🧱</span>Tokens</a>
+      <a href="03-attention.html" class="active"><span>🗺️</span>Attention</a>
+      <a href="04-transformer.html"><span>🚀</span>Transformer</a>
+      <a href="05-quiz.html"><span>🎯</span>Quiz</a>
+    </nav>
+  </header>
+
+  <div class="pill">
+    <span>🗺️</span><span>Level 3 – Attention</span>
+  </div>
+
+  <h1>Which LEGO bricks matter to which?</h1>
+  <p class="tagline">
+    Attention is how the AI decides which words are important to each other. Like LEGO neighbors choosing who to listen to.
+  </p>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">🏘️</span>
+        <span>LEGO neighborhood story</span>
+      </div>
+    </div>
+    <div class="illustration-row">
+      <div class="illustration">
+        <img src="assets/img/lego_town.svg" alt="LEGO town">
+      </div>
+      <div>
+        <p>
+          Picture a tiny LEGO town. Each word in the sentence
+          <span class="highlight">“Cats purr when they feel safe.”</span> is a character:
+        </p>
+        <ul>
+          <li><strong>Cats</strong> – the main character.</li>
+          <li><strong>purr</strong> – the action.</li>
+          <li><strong>feel</strong> and <strong>safe</strong> – how they are inside.</li>
+        </ul>
+        <p>
+          When someone asks a question, each character decides: “Who should I listen to right now?”
+          That decision is called <strong>attention</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="lang-block">
+      <div class="lang-label">På svenska</div>
+      <p>
+        Föreställ dig en liten LEGO-stad. Varje ord i meningen
+        <span class="highlight">”Katter spinner när de känner sig trygga.”</span> är en figur.
+      </p>
+      <p>
+        När någon ställer en fråga bestämmer varje figur: ”Vem behöver jag lyssna på just nu?”
+        Det kallas <strong>attention</strong> – uppmärksamhet mellan orden.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">🧱</span>
+        <span>Interactive attention map</span>
+      </div>
+      <span class="card-sub">Click a word</span>
+    </div>
+    <p class="section-caption">
+      Sentence: <span class="highlight">“Cats purr when they feel safe.”</span><br>
+      Click a LEGO word to see which other words it pays attention to.
+    </p>
+
+    <div id="attentionBricks" class="attention-bricks"></div>
+    <div id="attentionExplanation" class="tiny-note"></div>
+
+    <div class="badge-row">
+      <div class="badge">Green glow = super important</div>
+      <div class="badge">Blue glow = important</div>
+      <div class="badge">Grey outline = a little</div>
+      <div class="badge">Faded = almost ignored</div>
+    </div>
+
+    <p class="small-label" style="margin-top:10px;">Question mode</p>
+    <div class="quiz-options">
+      <button class="quiz-button" onclick="setScenario('who')">Who is purring?</button>
+      <button class="quiz-button" onclick="setScenario('what')">What is happening?</button>
+      <button class="quiz-button" onclick="setScenario('feeling')">How do they feel?</button>
+    </div>
+    <div id="attentionScenario" class="tiny-note"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">📢</span>
+        <span>Important: attention is not magic</span>
+      </div>
+    </div>
+    <p>
+      In real life, “attention” can mean emotions and focus. In AI it’s much simpler:
+      the model just gives some words <strong>more weight</strong> than others when guessing a good answer.
+    </p>
+    <p>
+      It doesn’t remember your feelings. It doesn’t know who you are in the room.
+      It only sees the text on the screen.
+    </p>
+
+    <div class="lang-block">
+      <div class="lang-label">På svenska</div>
+      <p>
+        I vardagligt språk betyder ”attention” ofta känslor eller fokus. I AI är det enklare:
+        modellen ger helt enkelt vissa ord <strong>mer vikt</strong> än andra när den gissar på ett bra svar.
+      </p>
+      <p>
+        Den ser inte ditt ansikte, känner inte dina känslor och vet inte vem du är i rummet.
+        Den ser bara texten du skriver.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Next: in <strong>Level 4 – Transformer</strong>, you’ll see how these attention-powered bricks become a tiny LEGO brain.
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

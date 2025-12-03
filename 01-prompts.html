@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 1 – Prompts | LEGO Transformer Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div>
+        <div class="brand-title">LEGO Transformer Lab</div>
+        <div class="brand-subtitle">Level 1 – Prompts</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><span>🏠</span>Home</a>
+      <a href="01-prompts.html" class="active"><span>💬</span>Prompts</a>
+      <a href="02-tokens.html"><span>🧱</span>Tokens</a>
+      <a href="03-attention.html"><span>🗺️</span>Attention</a>
+      <a href="04-transformer.html"><span>🚀</span>Transformer</a>
+      <a href="05-quiz.html"><span>🎯</span>Quiz</a>
+    </nav>
+  </header>
+
+  <div class="pill">
+    <span>💬</span><span>Level 1 – Prompts</span>
+  </div>
+
+  <h1>What does the AI actually see?</h1>
+  <p class="tagline">
+    On your screen you see chat bubbles. Inside the AI, everything is just one big block of text with different parts.
+  </p>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="card-title-emoji">👤</span>
+          <span>Your message</span>
+        </div>
+      </div>
+      <p class="section-caption">
+        Type anything you would tell an AI. Then we’ll show how it looks as a “prompt” inside the model.
+      </p>
+      <div class="small-label">Your chat message</div>
+      <input type="text" id="userMessage"
+             placeholder="Example: Explain cats using LEGO bricks.">
+      <p class="tiny-note">
+        Try questions like <em>“Why do cats purr?”</em> or <em>“How do transformers think?”</em>
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">
+          <span class="card-title-emoji">🧠</span>
+          <span>Inside the AI’s prompt</span>
+        </div>
+        <span class="card-sub">Mock example</span>
+      </div>
+      <p class="section-caption">
+        This is a pretend version of the text sent into the model. It’s like a script with roles.
+      </p>
+      <pre id="promptView"></pre>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">📜</span>
+        <span>The parts of a prompt (story mode)</span>
+      </div>
+    </div>
+    <p>Think of a prompt like a play script:</p>
+    <ul>
+      <li><strong>SYSTEM</strong> – the director’s rules: “Be kind, be safe, explain clearly.”</li>
+      <li><strong>DEVELOPER</strong> – extra notes: “Use LEGO metaphors, keep it fun.”</li>
+      <li><strong>MEMORY</strong> – what the AI remembers about this user (if allowed).</li>
+      <li><strong>HISTORY</strong> – the conversation so far.</li>
+      <li><strong>USER</strong> – your latest line: the thing you just typed.</li>
+    </ul>
+    <p>
+      The model reads <em>all of this together</em> as plain text, then predicts how to answer.
+      No feelings, just pattern-matching.
+    </p>
+
+    <div class="lang-block">
+      <div class="lang-label">På svenska</div>
+      <p>
+        Tänk på en prompt som ett manus:
+      </p>
+      <ul>
+        <li><strong>SYSTEM</strong> – regissörens regler: ”Var snäll, var säker, förklara tydligt”.</li>
+        <li><strong>DEVELOPER</strong> – extra instruktioner: ”Använd LEGO-metaforer, håll det roligt”.</li>
+        <li><strong>MEMORY</strong> – vad AI:n minns om den här användaren (om det är tillåtet).</li>
+        <li><strong>HISTORY</strong> – konversationen hittills.</li>
+        <li><strong>USER</strong> – din senaste replik: det du just skrev.</li>
+      </ul>
+      <p>
+        Modellen läser <em>allt detta samtidigt</em> som text och gissar sedan på ett passande svar.
+        Inga känslor – bara mönster i text.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Next: see how your words become LEGO bricks in <strong>Level 2 – Tokens</strong>.
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

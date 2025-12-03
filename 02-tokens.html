@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 2 – Tokens | LEGO Transformer Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div>
+        <div class="brand-title">LEGO Transformer Lab</div>
+        <div class="brand-subtitle">Level 2 – Tokens</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><span>🏠</span>Home</a>
+      <a href="01-prompts.html"><span>💬</span>Prompts</a>
+      <a href="02-tokens.html" class="active"><span>🧱</span>Tokens</a>
+      <a href="03-attention.html"><span>🗺️</span>Attention</a>
+      <a href="04-transformer.html"><span>🚀</span>Transformer</a>
+      <a href="05-quiz.html"><span>🎯</span>Quiz</a>
+    </nav>
+  </header>
+
+  <div class="pill">
+    <span>🧱</span><span>Level 2 – Tokens</span>
+  </div>
+
+  <h1>Your sentence becomes LEGO bricks</h1>
+  <p class="tagline">
+    Before thinking, the AI chops your text into small pieces called tokens. We’ll treat each token like a LEGO brick.
+  </p>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">🔤</span>
+        <span>Token LEGO builder</span>
+      </div>
+    </div>
+    <p class="section-caption">
+      Type a short sentence. We’ll split it into simple “word tokens” and show them as colorful LEGO bricks.
+    </p>
+    <div class="small-label">Your sentence</div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:4px; margin-bottom:4px;">
+      <input type="text" id="tokenInput"
+             placeholder="Example: Cats purr when they feel safe.">
+      <button onclick="buildTokens()">🧱 Build bricks</button>
+    </div>
+
+    <div class="small-label">Tokens as LEGO bricks</div>
+    <div id="tokenBricks" class="brick-row"></div>
+    <p class="tiny-note">
+      Real AI tokens are sometimes <em>parts of words</em> (like “un + believe + able”).<br>
+      Our simple version uses full words so it’s easier to see.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">📚</span>
+        <span>Why chop text into tokens?</span>
+      </div>
+    </div>
+    <div class="illustration-row">
+      <div class="illustration">
+        <img src="assets/img/lego_bricks.svg" alt="LEGO bricks">
+      </div>
+      <div>
+        <p>
+          Imagine trying to build a spaceship out of one giant LEGO block. Impossible.
+          You need many small pieces that can be reused.
+        </p>
+        <p>
+          Tokens are like standard LEGO bricks:
+        </p>
+        <ul>
+          <li>You can build many different sentences (spaceships) from the same pieces.</li>
+          <li>Even new words can be built from known pieces.</li>
+          <li>The AI can learn patterns like “cats + purr” or “feel + safe”.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lang-block">
+      <div class="lang-label">På svenska</div>
+      <p>
+        Föreställ dig att bygga ett rymdskepp av <em>en</em> enda LEGO-kloss. Omöjligt.
+        Du behöver många små bitar som kan återanvändas.
+      </p>
+      <p>
+        Tokens är som standardiserade LEGO-bitar:
+      </p>
+      <ul>
+        <li>Du kan bygga många olika meningar (”rymdskepp”) av samma bitar.</li>
+        <li>Även nya ord kan byggas av kända delar.</li>
+        <li>AI:n kan lära sig mönster som ”katter + spinner” eller ”känna + sig + trygg”.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Next: in <strong>Level 3 – Attention</strong>, your LEGO bricks start looking at each other.
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

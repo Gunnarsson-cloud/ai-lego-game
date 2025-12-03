@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 5 – Quiz | LEGO Transformer Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div>
+        <div class="brand-title">LEGO Transformer Lab</div>
+        <div class="brand-subtitle">Level 5 – Quiz</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><span>🏠</span>Home</a>
+      <a href="01-prompts.html"><span>💬</span>Prompts</a>
+      <a href="02-tokens.html"><span>🧱</span>Tokens</a>
+      <a href="03-attention.html"><span>🗺️</span>Attention</a>
+      <a href="04-transformer.html"><span>🚀</span>Transformer</a>
+      <a href="05-quiz.html" class="active"><span>🎯</span>Quiz</a>
+    </nav>
+  </header>
+
+  <div class="pill">
+    <span>🎯</span><span>Level 5 – Think like a transformer</span>
+  </div>
+
+  <h1>Can you guess what the AI cares about?</h1>
+  <p class="tagline">
+    Transformers love meaning words. Let’s see if you can spot which LEGO bricks they should focus on.
+  </p>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">🌍</span>
+        <span>Language / Språk</span>
+      </div>
+    </div>
+    <p class="section-caption">
+      Choose if you want the quiz explained mainly in English or Swedish.
+    </p>
+    <div class="quiz-options">
+      <button class="quiz-button" onclick="setQuizLanguage('en')">🇬🇧 English</button>
+      <button class="quiz-button" onclick="setQuizLanguage('sv')">🇸🇪 Svenska</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">❓</span>
+        <span>Question</span>
+      </div>
+      <span class="card-sub">Pick the most important words</span>
+    </div>
+    <p>
+      <span id="quizSentence" class="highlight"></span>
+    </p>
+
+    <div id="quizOptions" class="quiz-options"></div>
+    <div class="progress-bar">
+      <div id="quizProgress" class="progress-fill"></div>
+    </div>
+    <div id="quizFeedback" class="quiz-feedback"></div>
+
+    <div style="margin-top:8px;">
+      <button class="secondary" onclick="nextQuizQuestion()">Next question ▶</button>
+    </div>
+
+    <p class="tiny-note">
+      Tip: helper words (“do”, “the”, “why”) matter, but the AI often focuses hardest on nouns and verbs –
+      the words that carry the main meaning.
+    </p>
+
+    <div class="lang-block">
+      <div class="lang-label">På svenska</div>
+      <p>
+        Tips: små ord som ”att”, ”och”, ”varför” behövs – men AI:n riktar ofta <em>extra</em> uppmärksamhet
+        mot substantiv och verb, alltså orden som bär mest betydelse.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">📚</span>
+        <span>What you’ve learned</span>
+      </div>
+    </div>
+    <ul>
+      <li>How a <strong>prompt</strong> is a script of rules, memory, history and your message.</li>
+      <li>How your text is turned into <strong>tokens</strong> (LEGO bricks).</li>
+      <li>How <strong>attention</strong> lets bricks look at each other and decide who matters.</li>
+      <li>How a <strong>transformer</strong> layer mixes everything into understanding.</li>
+    </ul>
+    <p>
+      That’s the heart of modern AI. The real models are bigger, deeper and trained on huge amounts of data,
+      but the basic ideas are the same – LEGO all the way down.
+    </p>
+
+    <div class="lang-block">
+      <div class="lang-label">På svenska</div>
+      <p>
+        Du har nu sett:
+      </p>
+      <ul>
+        <li>Hur en <strong>prompt</strong> är som ett manus med regler, minne, historik och din fråga.</li>
+        <li>Hur text blir <strong>tokens</strong> – LEGO-bitar – som AI:n kan jobba med.</li>
+        <li>Hur <strong>attention</strong> låter bitar ”titta” på varandra och välja vad som är viktigast.</li>
+        <li>Hur ett <strong>transformer-lager</strong> blandar allt till en förståelse av meningen.</li>
+      </ul>
+      <p>
+        Riktiga modeller är större och djupare, men grundidén är densamma: bygga upp betydelse steg för steg.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    You’ve reached the end of the LEGO Transformer Lab. Feel free to replay any level or use this in workshops.
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 4 – Transformer | LEGO Transformer Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div>
+        <div class="brand-title">LEGO Transformer Lab</div>
+        <div class="brand-subtitle">Level 4 – LEGO Transformer Brain</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html"><span>🏠</span>Home</a>
+      <a href="01-prompts.html"><span>💬</span>Prompts</a>
+      <a href="02-tokens.html"><span>🧱</span>Tokens</a>
+      <a href="03-attention.html"><span>🗺️</span>Attention</a>
+      <a href="04-transformer.html" class="active"><span>🚀</span>Transformer</a>
+      <a href="05-quiz.html"><span>🎯</span>Quiz</a>
+    </nav>
+  </header>
+
+  <div class="pill">
+    <span>🚀</span><span>Level 4 – LEGO Transformer</span>
+  </div>
+
+  <h1>Build a tiny LEGO transformer brain</h1>
+  <p class="tagline">
+    Now we put it all together: tokens, attention, and mixing. This is how a transformer “understands” a sentence.
+  </p>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">🧠</span>
+        <span>Follow the steps</span>
+      </div>
+      <span class="card-sub">Sentence: “Cats purr loudly.”</span>
+    </div>
+
+    <div class="stepper">
+      <div class="step-header">
+        <div class="step-title" id="stepTitle"></div>
+        <div class="step-pill" id="stepPill"></div>
+      </div>
+      <div class="step-body" id="stepBody"></div>
+      <div style="display:flex; justify-content:space-between; gap:8px; margin-top:8px; flex-wrap:wrap;">
+        <button class="secondary" onclick="prevStep()">◀ Previous</button>
+        <button onclick="nextStep()">Next ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">
+        <span class="card-title-emoji">🏗️</span>
+        <span>Story: building meaning like a LEGO tower</span>
+      </div>
+    </div>
+    <p>
+      One transformer layer is like a single floor of a LEGO tower:
+    </p>
+    <ol>
+      <li>You lay out the bricks (tokens with hidden stats).</li>
+      <li>The bricks look around (attention) to see who matters.</li>
+      <li>They borrow information and get upgraded (mixing + small neural network).</li>
+      <li>The sentence meaning becomes a bit clearer.</li>
+    </ol>
+    <p>
+      Real models stack many of these floors on top of each other. The more layers, the more complex patterns
+      they can recognize – still just math on text, not a mind.
+    </p>
+
+    <div class="lang-block">
+      <div class="lang-label">På svenska</div>
+      <p>
+        En transformer-lager är som ett våningsplan i ett LEGO-torn:
+      </p>
+      <ol>
+        <li>Du lägger ut bitarna (tokens med dolda egenskaper).</li>
+        <li>Bitarna tittar runt (attention) för att se vilka som är viktiga.</li>
+        <li>De lånar information och uppgraderas (mixning + ett litet neuralt nätverk).</li>
+        <li>Meningen blir lite tydligare.</li>
+      </ol>
+      <p>
+        I riktiga modeller staplas många sådana lager. Ju fler våningar, desto mer komplexa mönster kan de upptäcka –
+        men det är fortfarande bara matematik på text, inte en egen vilja.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Final stop: <strong>Level 5 – Quiz</strong>. See if you can think like a transformer.
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
